@@ -91,5 +91,26 @@ body{
     background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
     margin-top: 2px;
     border-radius: 100px;
+    position: relative;
+}
+
+.disk-usage-bar .load-charge .charge-bar .marker{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.size-text{
+    display: flex;
+    justify-content: space-between;
+    color:var(--paleBlue);
+    width: 80%;
+    font-weight: bold;
+    margin: 0 auto;
+
 }
 
