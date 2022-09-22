@@ -52,3 +52,44 @@ body{
     padding: 9px;
 
 }
+
+.disk-usage-bar{
+    background-color: var(--darkBlue);
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.explaination{
+    padding-top: 1rem;
+    color: var(--paleBlue);
+    font-size: 0.9rem;
+}
+
+.explaination .size{
+    color: white;
+    font-weight: bold;
+}
+
+.disk-usage-bar .load-charge{
+    display: block;
+    background-color: var(--veryDarkBlue);
+    width: 80%;
+    margin: 0 auto;
+    height: 17px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.disk-usage-bar .load-charge .charge-bar{
+    width: 75%;
+    height: 12px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    margin-top: 2px;
+    border-radius: 100px;
+}
+
