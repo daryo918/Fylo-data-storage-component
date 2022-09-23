@@ -8,6 +8,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Raleway';
     font-size: 14px;
     box-sizing: border-box;
     background-image: url('../images/bg-mobile.png');
@@ -29,6 +30,7 @@ body{
 .disk-usage-description{
     background-color: var(--darkBlue);
     width: 100%;
+    min-width: 310px;
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -56,10 +58,12 @@ body{
 .disk-usage-bar{
     background-color: var(--darkBlue);
     width: 100%;
+    min-width: 312px;
     margin-top: 1rem;
     padding-left: 2rem;
     border-radius: 10px;
     text-align: center;
+    position: relative;
 }
 
 .explaination{
@@ -109,8 +113,32 @@ body{
     justify-content: space-between;
     color:var(--paleBlue);
     width: 80%;
+    min-width: 300px;
     font-weight: bold;
     margin: 0 auto;
+    padding-bottom: 2rem;
 
 }
 
+.free-space{
+    position: absolute;
+    width: 9rem;
+    height: 2rem;
+    background-color: white;
+    text-align: center;
+    padding-top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: -1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-bottom: 15px;
+
+}
+
+.free-space .big-free-space
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
