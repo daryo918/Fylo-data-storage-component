@@ -30,7 +30,6 @@ body{
 .disk-usage-description{
     background-color: var(--darkBlue);
     width: 100%;
-    min-width: 310px;
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -58,7 +57,6 @@ body{
 .disk-usage-bar{
     background-color: var(--darkBlue);
     width: 100%;
-    min-width: 312px;
     margin-top: 1rem;
     padding-left: 2rem;
     border-radius: 10px;
@@ -141,4 +139,34 @@ body{
 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media (min-width:800px) {
+    body{
+        background-image: url('../images/bg-desktop.png');
+            background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+    .disk-usage{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .disk-usage-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 180px;
+        width: 100%;
+    }
+    .disk-usage-description{
+        width: 30%;
+        margin-right: 30px;
+    }
+    .disk-usage-bar{
+        width: 80%;
+    }
 }
